@@ -12,7 +12,7 @@
 
 
 ### Tugas 7
-![1](https://github.com/naufalpf/SistemTerdistribusi/blob/master/soal.png)
+![1](https://github.com/naufalpf/SistemTerdistribusi/blob/master/soal.PNG)
 Implementasikan sebuah sistem seperti pada gambar. Sistem ini merupakan sebuah sistem penyimpanan berbasis http, 1 controller dan 3 storage service. Raft protocol diimplementasikan dalam cluster storage service 1 sampai 3.
 
 Implementasikan raft protokol untuk menjamin konsistensi data dalam cluster storage. (bahasa python)
