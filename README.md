@@ -1,4 +1,4 @@
-# Tugas Final Project Sistem Terdistribusi 2018 2018
+# Tugas Final Project Sistem Terdistribusi 2018 
 
 ## Kelompok 5
 
