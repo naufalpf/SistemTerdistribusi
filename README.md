@@ -2,7 +2,7 @@
 
 ## Kelompok 5
 
-     1. Faiq				05111540000007
+     1. Faiq			05111540000007
      2. Naufal Pranasetyo	     05111540000057
      3. Dicky Kaisar Utomo	     05111540000077
      4. Subhan Maulana		05111540000149
