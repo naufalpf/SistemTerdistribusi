@@ -1,17 +1,14 @@
 # Tugas Final Project Sistem Terdistribusi 2018 2018
 
 ## Kelompok 5
-
-1. Faiq						05111540000007
-2. Naufal P F				05111540000057
-3. Dicky Kaisar Utomo		05111540000077
-4. Subhan Maulana			05111540000149
-5. Wahyu Pujiono			05111540000151
-6. Rakhma Rufaida Hanum		05111540000161
 ---
-     Naufal Pranasetyo Fodensi
-     5115100057
-     Kelas Jaringan Nirkabel 2018
+     1. Faiq					05111540000007
+     2. Naufal P F				05111540000057
+     3. Dicky Kaisar Utomo		05111540000077
+     4. Subhan Maulana			05111540000149
+     5. Wahyu Pujiono			05111540000151
+     6. Rakhma Rufaida Hanum		05111540000161
+     
 ---
 
 ### Tugas 7
