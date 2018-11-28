@@ -9,7 +9,10 @@
 5. Wahyu Pujiono			05111540000151
 6. Rakhma Rufaida Hanum		05111540000161
 ---
-
+     Naufal Pranasetyo Fodensi
+     5115100057
+     Kelas Jaringan Nirkabel 2018
+---
 
 ### Tugas 7
 ![1](https://github.com/naufalpf/SistemTerdistribusi/blob/master/soal.PNG)
