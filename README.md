@@ -1,9 +1,9 @@
 # Tugas Final Project Sistem Terdistribusi 2018 2018
 
 ## Kelompok 5
----
-     1. Faiq					05111540000007
-     2. Naufal P F				05111540000057
+
+     1. Faiq				05111540000007
+     2. Naufal Pranasetyo		05111540000057
      3. Dicky Kaisar Utomo		05111540000077
      4. Subhan Maulana			05111540000149
      5. Wahyu Pujiono			05111540000151
