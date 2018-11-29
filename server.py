@@ -47,4 +47,4 @@ if (len(sys.argv) == 2):
             broadcastToAllNodes()
             sleep(delay)
 else:
-    print 'usage: daemon.py <10.151.253.251:12000>'
+    print 'usage: daemon.py <192.168.1.118:12000>'

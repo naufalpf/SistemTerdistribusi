@@ -403,4 +403,4 @@ if (len(sys.argv) == 3):
     else:
         print 'address(es) not listed in listNodeAddress.txt'
 else:
-    print 'usage: node.py <192.168.0.123:12000> <timeout>'
+    print 'usage: node.py <192.168.1.118:12000> <timeout>'

@@ -39,4 +39,4 @@ if (len(sys.argv) == 2):
     server = HTTPServer(("", PORT), WorkerHandler)
     server.serve_forever()
 else:
-    print 'usage: worker.py <10.151.253.251>'
+    print 'usage: worker.py <192.168.1.118>'

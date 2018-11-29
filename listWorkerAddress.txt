@@ -1,7 +1,9 @@
-http://10.151.253.251:13000
-http://10.151.253.251:13001
+http://192.168.1.118:13000
+http://192.168.1.118:13001
 
-python server.py 10.151.253.251:13000
-python node.py 10.151.253.251:12000 5000
-python node.py 10.151.253.251:12001 5000
-python node.py 10.151.253.251:12002 5000
+running
+python server.py 192.168.1.118:13000
+python worker.py
+python node.py 192.168.1.118:12000 5000
+python node.py 192.168.1.118:12001 5000
+python node.py 192.168.1.118:12002 5000
