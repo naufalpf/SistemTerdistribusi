@@ -49,7 +49,7 @@
 
 ## Implementasi Raft
 1. Buka dari browser setelah run web server pada client: `localhost:5555`
-2. Masukkan angka pada kolom Data, lalu klik Write
-3. Di terminal, akan terlihat port. Masukkan port tersebut pada kolom di browser
+2. Masukkan angka pada kolom raft editor, lalu klik Write
+3. Di terminal pada masing-masing node, akan terlihat port. Masukkan port tersebut pada kolom raft editor di browser
 4. Klik Read pada browser, maka akan muncul angka yang ditulis sebelumnya
 5. Di terminal akan muncul angka tersebut pada masing-masing node
