@@ -12,10 +12,11 @@ import sys
 
 sys.path.append("..")
 
-from raft import message_types
-from raft import node
+#from raft import message_types
+from raft import Node
 #import common
-from .. import common
+#from .. import common
+from common import read_nodes, setup_logging, MessageTypes, get_address_tuple
 
 
 def verify_arguments(amount):
@@ -24,11 +25,11 @@ def verify_arguments(amount):
 
 
 def get(address):
-    split = address.split(':')
+    #split = address.split(':')
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     try:
         sock.settimeout(1)
-        msg_data = pickle.dumps( (message_types.GET, None, None, None) )
+        msg_data = pickle.dumps( (MessageTypes.GET, None, None, None) )
         sock.sendto(msg_data, get_address_tuple(address))
         recieved_data = sock.recv(1024)
         return recieved_data
@@ -43,7 +44,7 @@ def set(address, value):
     try:
         sock.settimeout(1)
         data = pickle.dumps(value)
-        msg_data = pickle.dumps( (message_types.SET, None, None, data) )
+        msg_data = pickle.dumps( (MessageTypes.SET, None, None, data) )
         sock.sendto(msg_data, (split[0], int(split[1])))
     except socket.timeout:
         logging.error('Timeout was reached')
@@ -57,8 +58,8 @@ fh = logging.FileHandler('client.log')
 sh = logging.StreamHandler(sys.stdout)
 logging.getLogger().addHandler(fh)
 logging.getLogger().addHandler(sh)
-setup_logging()
 
+setup_logging('client.log')
 
 if len(sys.argv) < 3:
     logging.error('Incorrect amount of arguments')

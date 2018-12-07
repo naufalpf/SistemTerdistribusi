@@ -1,9 +1,0 @@
-http://192.168.1.118:13000
-http://192.168.1.118:13001
-
-running
-python server.py 192.168.1.118:13000
-python worker.py
-python node.py 192.168.1.118:12000 5000
-python node.py 192.168.1.118:12001 5000
-python node.py 192.168.1.118:12002 5000
