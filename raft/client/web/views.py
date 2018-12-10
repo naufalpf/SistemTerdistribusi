@@ -17,7 +17,7 @@ def home():
     data = read_data()
     return render_template(
         'index.html',
-        title='NoteRaft',
+        title='Raft Message Implementation: Client',
         content=data
     )
 

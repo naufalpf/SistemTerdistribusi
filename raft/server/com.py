@@ -25,7 +25,7 @@ def verify_arguments(amount):
 
 
 def get(address):
-    #split = address.split(':')
+    split = address.split(':')
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     try:
         sock.settimeout(1)

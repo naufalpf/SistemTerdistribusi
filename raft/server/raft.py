@@ -3,6 +3,7 @@ import pickle
 import random
 import socket
 import sys
+import time
 
 sys.path.append("..")
 
@@ -78,6 +79,7 @@ class Node(SimpleSocket):
     def __init__(self, id, address, peers):
         self.id = id
         self.state = NodeStates.FOLLOWER
+        logging.info('{0} Became FOLLOWER'.format(self.id))
         self.address = address
         self.start_server(address)
         self.__votes = 0
@@ -212,10 +214,15 @@ class Node(SimpleSocket):
             self.__data_state = DataStates.CONSISTENT
 
     def __commit(self):
+        start_time = time.time()
+
         self.__data = self.__data_to_set
         self.__data_to_set = None
         self.__data_state == DataStates.CONSISTENT
         logging.info('{0} Committed data changes {1}'.format(self.id, self.__data))
+
+        end_time = time.time()
+        print("Total execution time: {} seconds".format(end_time - start_time))
 
     # ---------- HELPERS ----------
 
