@@ -1,34 +1,17 @@
 # HOW TO RUN (MASIH ON WORKING)
 ## INSTALL DEPENDENCIES
+
 ### Install virtualenv
 
     - Linux $ sudo pip install virtualenv
     - Windows $ py -m pip install virtualenv
     
-# Install Dependencies untuk Server & Client pada Linux
+### Install Dependencies untuk Server & Client
 
     $ virtualenv -p python3 .env         # Creates a virtual environment with python3
     $ source .env/bin/activate           # Activate the virtual environment
     $ cd server                          # Enter folder server
     $ pip install -r requirements.txt    # Install all the dependencies
-
-# Install Dependencies untuk Server & Client pada Windows
-
-    $ virtualenv -p py .env
-    $ .env\Scripts\activate.bat
-    $ cd server
-    $ pip install -r requirements.txt
-
- Edit file `nodes.txt` untuk mengatur node mana yang digunakan
-------------------------------MULAI RUNNING
-## Linux
-
-- Using Terminal
-<pre>$ cd shell                          # Enter folder shell</pre>
-
-## Windows
-- Using Terminal
-<pre>$ cd cmd                           # Enter folder cmd</pre>
 
 
 ## Implementasi Raft
