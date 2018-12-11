@@ -219,7 +219,7 @@ class Node(SimpleSocket):
         self.__data = self.__data_to_set
         self.__data_to_set = None
         self.__data_state == DataStates.CONSISTENT
-        logging.info('{0} Committed data changes {1}'.format(self.id, self.__data))
+        logging.info('{0} Committed data changes:  {1} '.format(self.id, self.__data))
 
         end_time = time.time()
         print("Total execution time: {} seconds".format(end_time - start_time))
