@@ -1,27 +1,47 @@
-# HOW TO RUN (MASIH ON WORKING)
-## INSTALL DEPENDENCIES
+# Using virtualenv
 
-### Install virtualenv
-
-    - Linux $ sudo pip install virtualenv
-    - Windows $ py -m pip install virtualenv
+    $ sudo pip install virtualenv
     
-### Install Dependencies untuk Server & Client
+# Installing Dependencies Server & Client
 
     $ virtualenv -p python3 .env         # Creates a virtual environment with python3
     $ source .env/bin/activate           # Activate the virtual environment
     $ cd server                          # Enter folder server
     $ pip install -r requirements.txt    # Install all the dependencies
+    
+# How To Run Project
 
+1. Edit file `nodes.txt` to specific node that want to start
 
-## Implementasi Raft
-1. Nyalakan Web Server dengan cara `$ run_web_server.bat`
-2. Aktifkan semua storage node untuk melakukan leader election 
-3. Buka dari browser setelah run web server pada client: `localhost:5555`
-4. Masukkan pesan pada kolom raft editor, lalu klik Write
-5. Di terminal akan terlihat pesan yang ditulis pada masing-masing node
-6. Jika node ditambah, node tersebut akan otomatis menjadi follower
-7. Buka terminal baru, run .env lagi dan masuk ke folder server
-8. Jalankan pada terminal server tersebut `py com.py get [node_host:node_port]`. Contoh: `$ py com.py get localhost:34572`
-9. Akan terlihat value pada node tersebut. Ganti port untuk mengecek pada masing-masing node
-10. Klik Read pada browser, maka akan muncul pesan yang ditulis sebelumnya
+## Linux
+
+1. Using Terminal
+
+<pre>$ cd shell                          # Enter folder shell</pre>
+    
+### Function
+    $ ./run_web_server.sh               # To run web server
+    $ ./start_all_nodes.sh              # To start all nodes
+    $ ./start_node_0.sh                 # To start node 0
+    $ ./start_node_1.sh                 # To start node 1
+    $ ./start_node_2.sh                 # To start node 2
+    $ ./start_node_3.sh                 # To start node 3
+    $ ./start_node_4.sh                 # To start node 4
+    
+## Windows
+
+1. Using cmd
+
+<pre>$ cd cmd                            # Enter folder cmd</pre>
+    
+### Function
+    $ run_web_server.bat                # To run web server
+    $ start_all_nodes.bat               # To start all nodes
+    $ start_node_0.bat                  # To start node 0
+    $ start_node_1.bat                  # To start node 1
+    $ start_node_2.bat                  # To start node 2
+    $ start_node_3.bat                  # To start node 3
+    $ start_node_4.bat                  # To start node 4
+
+## Try RAFT
+Open from your browser after run web server for the client: `localhost:5555`
