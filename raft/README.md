@@ -36,10 +36,10 @@
     $ start_all_nodes.bat               # To start all nodes
 
 ##### Aktifkan Storage
-$ .env\Scripts\activate.bat && cd cmd && start_node_0.bat
-$ .env\Scripts\activate.bat && cd cmd && start_node_1.bat
-$ .env\Scripts\activate.bat && cd cmd && start_node_2.bat
-$ .env\Scripts\activate.bat && cd cmd && start_node_3.bat
+    $ .env\Scripts\activate.bat && cd cmd && start_node_0.bat
+    $ .env\Scripts\activate.bat && cd cmd && start_node_1.bat
+    $ .env\Scripts\activate.bat && cd cmd && start_node_2.bat
+    $ .env\Scripts\activate.bat && cd cmd && start_node_3.bat
 
   Tunggu hingga Leader terpilih
 
@@ -53,12 +53,11 @@ $ .env\Scripts\activate.bat && cd cmd && start_node_3.bat
 - Masuk ke folder server
     $ cd cmd 
 - Jalankan file python com.py dengan cara
-"py com.py get [node_host:node_port]"
+    'py com.py get [node_host:node_port]'
 Contoh:
-$ py com.py get localhost:34572
-$ py com.py get localhost:34573
-$ py com.py get localhost:34574
-
+    $ py com.py get localhost:34572
+    $ py com.py get localhost:34573
+    $ py com.py get localhost:34574
 - Jika node ditambah, maka otomatis akan menjadi follower
 - Jika client memasukkan pesan lagi, maka akan menggantikan (replace) pesan sebelumnya.
 - Ketika client mengklik tombol Read pada browser, maka akan muncul pesan yang ditulis sebelumnya
