@@ -43,13 +43,13 @@
 
   Tunggu hingga Leader terpilih
 
-#### 5. Client melakukan pengiriman pesan
+### 5. Client melakukan pengiriman pesan
 
 - Buka dari browser setelah run web server pada client: `localhost:5555`
 - Masukkan pesan berisi angka maupun kata-kata
 - Klik "Write"
 
-#### 6. Cek pesan replikasi pada tiap storage
+### 6. Cek pesan replikasi pada tiap storage
 - Masuk ke folder server
    <pre> $ cd cmd </pre>
 - Jalankan file python com.py dengan cara
@@ -59,7 +59,11 @@
     $ py com.py get localhost:34572
     $ py com.py get localhost:34573
     $ py com.py get localhost:34574
-    
+     $ start_node_0.bat                  # Untuk start node 0
+    $ start_node_1.bat                  # Untuk start node 1
+    $ start_node_2.bat                  # Untuk start node 2
+    $ start_node_3.bat                  # Untuk start node 3
+
 - Jika node ditambah, maka otomatis akan menjadi follower
 - Jika client memasukkan pesan lagi, maka akan menggantikan (replace) pesan sebelumnya.
 - Ketika client mengklik tombol Read pada browser, maka akan muncul pesan yang ditulis sebelumnya
