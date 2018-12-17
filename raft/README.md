@@ -51,13 +51,15 @@
 
 #### 6. Cek pesan replikasi pada tiap storage
 - Masuk ke folder server
-    $ cd cmd 
+   <pre> $ cd cmd </pre>
 - Jalankan file python com.py dengan cara
     `py com.py get [node_host:node_port]`
 - Contoh:
-<pre>$ py com.py get localhost:34572</pre>
-<pre>$ py com.py get localhost:34573</pre>
-<pre>$ py com.py get localhost:34574</pre>
+
+    $ py com.py get localhost:34572
+    $ py com.py get localhost:34573
+    $ py com.py get localhost:34574
+    
 - Jika node ditambah, maka otomatis akan menjadi follower
 - Jika client memasukkan pesan lagi, maka akan menggantikan (replace) pesan sebelumnya.
 - Ketika client mengklik tombol Read pada browser, maka akan muncul pesan yang ditulis sebelumnya
