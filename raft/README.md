@@ -55,15 +55,11 @@
 - Jalankan file python com.py dengan cara
     `py com.py get [node_host:node_port]`
 - Contoh:
-
+<pre>
     $ py com.py get localhost:34572
     $ py com.py get localhost:34573
     $ py com.py get localhost:34574
-     $ start_node_0.bat                  # Untuk start node 0
-    $ start_node_1.bat                  # Untuk start node 1
-    $ start_node_2.bat                  # Untuk start node 2
-    $ start_node_3.bat                  # Untuk start node 3
-
+</pre>
 - Jika node ditambah, maka otomatis akan menjadi follower
 - Jika client memasukkan pesan lagi, maka akan menggantikan (replace) pesan sebelumnya.
 - Ketika client mengklik tombol Read pada browser, maka akan muncul pesan yang ditulis sebelumnya
