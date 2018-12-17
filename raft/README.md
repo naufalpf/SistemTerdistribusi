@@ -53,8 +53,8 @@
 - Masuk ke folder server
     $ cd cmd 
 - Jalankan file python com.py dengan cara
-    'py com.py get [node_host:node_port]'
-Contoh:
+    `py com.py get [node_host:node_port]`
+- Contoh:
     $ py com.py get localhost:34572
     $ py com.py get localhost:34573
     $ py com.py get localhost:34574
