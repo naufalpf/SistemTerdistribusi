@@ -1,47 +1,64 @@
-# Using virtualenv
+# Cara Running Implementasi
+### 1. Install virtualenv
 
-    $ sudo pip install virtualenv
-    
-# Installing Dependencies Server & Client
+    - $ py -m pip install virtualenv
 
-    $ virtualenv -p python3 .env         # Creates a virtual environment with python3
-    $ source .env/bin/activate           # Activate the virtual environment
-    $ cd server                          # Enter folder server
-    $ pip install -r requirements.txt    # Install all the dependencies
-    
-# How To Run Project
+### 2. Install Dependencies untuk Server & Client pada Windows
 
-1. Edit file `nodes.txt` to specific node that want to start
+    $ virtualenv -p py .env               # Membuat virtual environment menggunakan python3
+    $ .env\Scripts\activate.bat           # Mengaktifkan virtual environment
+    $ cd server                           # Masuk ke folder server          
+    $ pip install -r requirements.txt     # Install semua dependencies yang diperlukan
 
-## Linux
+    $ .env\Scripts\activate.bat && cd server && pip install -r requirements.txt
 
-1. Using Terminal
+ Edit file `nodes.txt` untuk mengkonfigurasi dan melihat node mana yang nanti akan digunakan
+ Keluar dari folder server dan masuk ke folder cmd
 
-<pre>$ cd shell                          # Enter folder shell</pre>
-    
-### Function
-    $ ./run_web_server.sh               # To run web server
-    $ ./start_all_nodes.sh              # To start all nodes
-    $ ./start_node_0.sh                 # To start node 0
-    $ ./start_node_1.sh                 # To start node 1
-    $ ./start_node_2.sh                 # To start node 2
-    $ ./start_node_3.sh                 # To start node 3
-    $ ./start_node_4.sh                 # To start node 4
-    
-## Windows
+<pre>$ cd cmd                           # Masuk folder cmd</pre>
+ 
+### 3. Jalankan Web Server 
+    $ run_web_server.bat                # Untuk menyalakan web server yang digunakan oleh client
 
-1. Using cmd
+    $ .env\Scripts\activate.bat && cd cmd && run_web_server.bat
 
-<pre>$ cd cmd                            # Enter folder cmd</pre>
-    
-### Function
-    $ run_web_server.bat                # To run web server
+### 4. Aktifkan Storage Node untuk Lead Election
+    Buka pada Terminal lain dan aktifkan virtual environment
+    $ .env\Scripts\activate.bat  
+    Jalankan node yang digunakan sesuai pada file nodes.txt
+    Aktifkan tiap node melalui terminal yang berbeda
+    $ start_node_0.bat                  # Untuk start node 0
+    $ start_node_1.bat                  # Untuk start node 1
+    $ start_node_2.bat                  # Untuk start node 2
+    $ start_node_3.bat                  # Untuk start node 3
+
+    Jika ingin menyalakan semua node sekaligus, jalankan fungsi
     $ start_all_nodes.bat               # To start all nodes
-    $ start_node_0.bat                  # To start node 0
-    $ start_node_1.bat                  # To start node 1
-    $ start_node_2.bat                  # To start node 2
-    $ start_node_3.bat                  # To start node 3
-    $ start_node_4.bat                  # To start node 4
 
-## Try RAFT
-Open from your browser after run web server for the client: `localhost:5555`
+##### Aktifkan Storage
+$ .env\Scripts\activate.bat && cd cmd && start_node_0.bat
+$ .env\Scripts\activate.bat && cd cmd && start_node_1.bat
+$ .env\Scripts\activate.bat && cd cmd && start_node_2.bat
+$ .env\Scripts\activate.bat && cd cmd && start_node_3.bat
+
+  Tunggu hingga Leader terpilih
+
+#### 5. Client melakukan pengiriman pesan
+
+- Buka dari browser setelah run web server pada client: `localhost:5555`
+- Masukkan pesan berisi angka maupun kata-kata
+- Klik "Write"
+
+#### 6. Cek pesan replikasi pada tiap storage
+- Masuk ke folder server
+    $ cd cmd 
+- Jalankan file python com.py dengan cara
+"py com.py get [node_host:node_port]"
+Contoh:
+$ py com.py get localhost:34572
+$ py com.py get localhost:34573
+$ py com.py get localhost:34574
+
+- Jika node ditambah, maka otomatis akan menjadi follower
+- Jika client memasukkan pesan lagi, maka akan menggantikan (replace) pesan sebelumnya.
+- Ketika client mengklik tombol Read pada browser, maka akan muncul pesan yang ditulis sebelumnya
