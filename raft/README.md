@@ -1,7 +1,7 @@
 # Cara Running Implementasi
 ### 1. Install virtualenv
 
-    - $ py -m pip install virtualenv
+    $ py -m pip install virtualenv
 
 ### 2. Install Dependencies untuk Server & Client pada Windows
 
