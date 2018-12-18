@@ -51,7 +51,7 @@
 
 ### 6. Cek pesan replikasi pada tiap storage
 - Masuk ke folder server
-   <pre> $ cd cmd </pre>
+   <pre> $ cd server </pre>
 - Jalankan file python com.py dengan cara
     `py com.py get [node_host:node_port]`
 - Contoh:
