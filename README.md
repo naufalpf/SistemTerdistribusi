@@ -10,7 +10,7 @@
      6. Rakhma Rufaida Hanum	05111540000161
 ---
 
-[Implementasi](/raft)
+[Hasil Implementasi](/raft)
 
 ### Tugas 7
 ![1](https://github.com/naufalpf/SistemTerdistribusi/blob/master/soal.PNG)
