@@ -23,8 +23,12 @@
     $ .env\Scripts\activate.bat && cd cmd && run_web_server.bat
 
 ### 4. Aktifkan Storage Node untuk Lead Election
-    Buka pada Terminal lain dan aktifkan virtual environment
-    $ .env\Scripts\activate.bat  
+    Buka pada Terminal lain, aktifkan virtual environment
+    $ .env\Scripts\activate.bat
+
+    Masuk folder cmd 
+    $ cd cmd
+   
     Jalankan node yang digunakan sesuai pada file nodes.txt
     Aktifkan tiap node melalui terminal yang berbeda
     $ start_node_0.bat                  # Untuk start node 0
