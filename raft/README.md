@@ -63,6 +63,7 @@
     $ py com.py get localhost:34572
     $ py com.py get localhost:34573
     $ py com.py get localhost:34574
+    $ .env\Scripts\activate.bat && cd server && py com.py get localhost:34574
 </pre>
 - Jika node ditambah, maka otomatis akan menjadi follower
 - Jika client memasukkan pesan lagi, maka akan menggantikan (replace) pesan sebelumnya.
